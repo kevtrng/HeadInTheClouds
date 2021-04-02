@@ -8,7 +8,6 @@
   </head>
   <body>
 
-    <div id = "bigCloud"></div>
     <h2>WELCOME TO </h2>
     <h1>HEAD IN THE CLOUDS</h1>
 
