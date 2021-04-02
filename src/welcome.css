@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@800&family=Oswald&display=swap');
+
+body{
+    background-image: url('./images/bigClouds.png'), url('./images/smallClouds.png');
+    animation: smallcloud-move;
+    animation-timing-function: linear;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+
+
+h1{
+    font-family: 'Dosis', sans-serif;
+    font-size: 4.5em;
+    color: #387282;
+    text-shadow: -1vw 1vw 0 #add8e6, -1.2vw 1.2vw 0 white, -2vw 2vw 0 #add8e6;
+    text-align: center;
+    padding-bottom: 9vw;
+}
+
+h2{
+    font-family: 'Dosis', sans-serif;
+    font-size: 3.5em;
+    text-align: center;
+    padding-top:5vw;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.enterButton {
+    font-family: 'Oswald', sans-serif;
+    background-color: #9EC6D5;
+    font-size: 2em;
+    border: none;
+    border-radius: 50px;
+    width: 25%;
+    display: inline-block;
+    text-align: center;
+    margin: auto;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+a:visited{
+    color: #f8f8ff;
+}
+
+
+@keyframes smallcloud-move {
+    0% { 
+        background-position: 0px 0px}
+    100% { background-position: 500px, -500px ; } 
+  }
