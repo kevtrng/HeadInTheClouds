@@ -3,9 +3,9 @@
 body{
     background-image: url('./images/bigClouds.png'), url('./images/smallClouds.png');
     animation: cloud-move;
-    animation-timing-function: linear;
-    animation-duration: 30s;
-    animation-iteration-count: infinite;
+    animation-timing-function: linear, linear;
+    animation-duration: 15s;
+    animation-iteration-count: infinite, infinite;
 }
 
 
@@ -54,6 +54,8 @@ a:visited{
 
 @keyframes cloud-move {
     0% { 
-        background-position: 0px 0px}
-    100% { background-position: 500px, -500px ; } 
+        background-position: 0}
+    100% { 
+        background-position: 500px, -500px ; 
+    } 
   }
