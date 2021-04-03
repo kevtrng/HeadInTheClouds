@@ -2,7 +2,7 @@
 
 body{
     background-image: url('./images/bigClouds.png'), url('./images/smallClouds.png');
-    animation: smallcloud-move;
+    animation: cloud-move;
     animation-timing-function: linear;
     animation-duration: 30s;
     animation-iteration-count: infinite;
@@ -52,7 +52,7 @@ a:visited{
 }
 
 
-@keyframes smallcloud-move {
+@keyframes cloud-move {
     0% { 
         background-position: 0px 0px}
     100% { background-position: 500px, -500px ; } 
