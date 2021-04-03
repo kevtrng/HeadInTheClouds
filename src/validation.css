@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@800&family=Oswald&display=swap');
+
+body
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+  background-image: url('./images/bigClouds.png'), url('./images/smallClouds.png');
+  animation: cloud-move;
+  animation-timing-function: linear, linear;
+  animation-duration: 15s;
+  animation-iteration-count: infinite, infinite;
+}
+
+h1{
+    font-family: 'Dosis', sans-serif;
+    font-size: 4.5em;
+    color: #387282;
+    text-shadow: -1vw 1vw 0 #add8e6, -1.2vw 1.2vw 0 white, -2vw 2vw 0 #add8e6;
+    text-align: center;
+}
+
+main h1{
+    text-shadow: none;
+    font-size: 3.5em;
+    text-align: center;
+}
+
+form
+{
+  box-sizing: border-box;
+
+  border:4px solid #387282;
+  border-radius: 10px;
+
+  margin-bottom: 2rem;
+
+
+
+
+}
+
+form, form>label
+{
+  display: flex;
+  flex-direction: column;
+
+  background-color: #add8e6;
+  /* background-image: url('./images/smallClouds.png'), url('./images/bigClouds.png'); */
+  /* animation: cloud-move;
+  animation-timing-function: linear, linear;
+  animation-duration: 15s;
+  animation-iteration-count: infinite, infinite; */
+}
+
+form>*
+{
+  margin:1em;
+}
+
+fieldset label
+{
+  margin-bottom:.5rem;
+  margin-right:2rem;
+}
+
+main{
+    font-family: 'Dosis', sans-serif;
+    max-width: 800px;
+    width:100%;
+}
+
+
+
+input[type="submit"]{
+    font-family: 'Oswald', sans-serif;
+    align-self: center;
+    background-color: #387282;
+    color: white; 
+    border: none;
+    border-radius: 50px;
+    width: 25%;
+    font-size: 1.5em;
+}
+
+input[type="text"]{
+    border: none;
+    border-radius: 50px;
+    font-size: 1em;
+
+}
+
+.help-block, .failure-message
+{
+  color:#EA3C53;
+}
+
+@keyframes cloud-move {
+    0% { 
+        background-position: 0}
+    100% { 
+        background-position: 500px, -500px ; 
+    } 
+  }

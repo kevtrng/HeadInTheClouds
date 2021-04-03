@@ -13,7 +13,7 @@
 
     <div class = "button">
 
-        <button class= "enterButton" type="button"><a href= "index.php">ENTER</a></button>
+        <button class= "enterButton" type="button"><a href= "userValidation.php">ENTER</a></button>
     </div>
 
 

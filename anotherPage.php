@@ -7,7 +7,15 @@
     <link rel="stylesheet" href="./src/welcome.css">
   </head>
   <body>
-    <h1> F U C K </h1>
+
+    <h1>FUCK</h1>
+
+    <div class = "button">
+
+        <button class= "enterButton" type="button"><a href= "userValidation.php">ENTER</a></button>
+    </div>
+
+
 
   </body>
 </html>
