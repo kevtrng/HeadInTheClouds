@@ -1,3 +1,13 @@
+<?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+// require "./php/utility.php";
+// require "./database/database.php";
+require_once("./database/database.php");
+db_connect();
+get_comments();
+
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -15,7 +25,9 @@
         <button class= "enterButton" type="button"><a href= "userValidation.php">ENTER</a></button>
     </div>
 
-
+	<?php
+	showComments();
+	?>
 
   </body>
 </html>
