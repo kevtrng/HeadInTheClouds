@@ -13,6 +13,7 @@ $pdo = db_connect();
     <title>Head In The Clouds</title>
 
     <link rel="stylesheet" href="./src/welcome.css">
+    <link rel="stylesheet" href="./src/cloud.css">
   </head>
   <body>
 
