@@ -1,4 +1,4 @@
- <?php 
+ <?php
   // error reporting
   error_reporting(E_ALL);
   ini_set('display_errors', 1);
@@ -26,14 +26,14 @@
 
     <main>
       <h1> USER VALIDATION </h1>
-      <form method="post" action="userValidation.php"> 
+      <form method="post" action="userValidation.php">
 
         Name: <input type="text" name="name" id="name">
               <?php the_validation_message('name'); ?>
 
 
 
-        Email: 
+        Email:
           <input type="text" name="email" id="email">
             <?php the_validation_message('email'); ?>
 
@@ -41,18 +41,18 @@
         <fieldset>
             <legend> Please select your gender:</legend>
 
-              <input type="checkbox" name="gender[]" id="male" value="male">
+              <input type="radio" name="gender[]" id="male" value="male">
                 <label for="male">Male</label>
 
-              <input type="checkbox" name="gender[]" id="female" value="female">
+              <input type="radio" name="gender[]" id="female" value="female">
                 <label for="female">Female</label>
 
-              <input type="checkbox" name="gender[]" id="other" value="other">
+              <input type="radio" name="gender[]" id="other" value="other">
                 <label for="other">Other</label>
 
           <!-- Display validation message checkbox group -->
-              <?php 
-              the_validation_message('gender'); 
+              <?php
+              the_validation_message('gender');
               ?>
 
         </fieldset>
@@ -68,7 +68,3 @@
 
   </body>
 </html>
-
-
-
-

@@ -31,7 +31,7 @@ function validate()
 
     // Initialize result
     $result = true;
-    
+
     if($_SERVER['REQUEST_METHOD']== 'POST')
     {
       // Use these patterns to check email and date, or come up with your own.
@@ -75,13 +75,14 @@ function validate()
        * Write PHP code to validate the animals checkbox group here
        */
 
-    if(isset($_POST["gender"]) && count($_POST["gender"]) == 1){
+    if(isset($_POST["gender"])){
+    // if(isset($_POST["gender"]) && count($_POST["gender"]) == 1){
       $this_result = true;
       } else {
         $this_result = false;
-      } 
+      }
     $result = $result && $this_result;
-  
+
     if ($this_result == true) {
       $val_messages["gender"] = "";
     } else {
@@ -94,7 +95,7 @@ function validate()
         $this_result = true;
     } else {
       $this_result = false;
-    } 
+    }
     $result = $result && $this_result;
 
     if ($this_result == true) {
@@ -121,7 +122,7 @@ function the_validation_message($type) {
       echo "<p class='failure-message'>${val_messages[$type]}</p>";
     }
 
-  
+
 
     //inside the <p> tag display, display the message by accessing the array: ${val_messages[$type]}
 
