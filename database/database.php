@@ -3,7 +3,6 @@ require 'config.php';
 
 // Should return a PDO
 function db_connect() {
-
   try {
     // TODO
     // try to open database connection using constants set in config.php
@@ -54,14 +53,14 @@ function handle_form_submission() {
 function get_comments() {
   global $pdo;
   global $comments;
-  
+
   $sql = 'SELECT * FROM comments ORDER BY ID DESC';
 
   $result = $pdo->query($sql);
   while($row = $result->fetch()){
     // $comments[] = $row;
 	// array_push($comments, $row);
-	echo "fuck";
+	echo $row["commentText"]. "<br>";
   }
 
 }

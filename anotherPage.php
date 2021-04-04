@@ -2,10 +2,8 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 // require "./php/utility.php";
-// require "./database/database.php";
-require_once("./database/database.php");
-db_connect();
-get_comments();
+require "./database/database.php";
+$pdo = db_connect();
 
 ?>
 <!DOCTYPE html>
@@ -26,7 +24,7 @@ get_comments();
     </div>
 
 	<?php
-	showComments();
+	get_comments();
 	?>
 
   </body>
