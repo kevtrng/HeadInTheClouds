@@ -8,8 +8,14 @@
 
   // Validate form submission
   validate();
-?>
 
+  error_reporting(E_ALL);
+  ini_set('display_errors', 1);
+  // require "./php/utility.php";
+  require "./database/database.php";
+  $pdo = db_connect();
+  handle_form_submission();
+?>
 
 
 <!DOCTYPE html>
@@ -57,7 +63,15 @@
 
         </fieldset>
 
-        <input class= "submitButton" type="submit" value="Submit"><a href= "validation.php"></a>
+        <label>
+          Enter your Head In The Cloud Thoughts:
+          <textarea name="comment"></textarea>
+        </label>
+
+        <button type="submit" name="button">POST CLOUD <a href= "validation.php"></a></button>
+
+
+        <!-- <input class= "submitButton" type="submit" value="Submit"><a href= "validation.php"></a> -->
 
       </form>
 
