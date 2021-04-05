@@ -14,7 +14,10 @@
   // require "./php/utility.php";
   require "./database/database.php";
   $pdo = db_connect();
-  handle_form_submission();
+  // handle_form_submission();
+  if($valid) {
+	  handle_form_submission();
+  }
 ?>
 
 
