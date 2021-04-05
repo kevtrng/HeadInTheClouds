@@ -37,8 +37,9 @@
       <h1> USER VALIDATION </h1>
       <form method="post" action="userValidation.php">
 
-        Name: <input type="text" name="name" id="name">
-              <?php the_validation_message('name'); ?>
+        Name (optional): 
+		<input type="text" name="name" id="name">
+              <?php //the_validation_message('name'); ?>
 
 
 
@@ -59,7 +60,8 @@
               <input type="radio" name="gender[]" id="other" value="other">
                 <label for="other">Other</label>
 
-          <!-- Display validation message checkbox group -->
+			  <input type="radio" name="gender[]" id="anon" value="anon">
+                <label for="anon">Prefer not to say</label>
               <?php
               the_validation_message('gender');
               ?>
