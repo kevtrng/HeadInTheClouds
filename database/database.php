@@ -60,7 +60,7 @@ function get_comments() {
   while($row = $result->fetch()){
     // $comments[] = $row;
 	// array_push($comments, $row);
-	echo "<div class='cloud'>" . $row["commentText"]. "</div>";
+	echo "<div class='cloud'><p>" . $row["commentText"]. "</p></div>";
   }
 
 }

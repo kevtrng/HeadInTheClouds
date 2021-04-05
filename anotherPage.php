@@ -24,9 +24,10 @@ $pdo = db_connect();
         <button class= "enterButton" type="button"><a href= "userValidation.php">ENTER</a></button>
     </div>
 
-	<?php
-	get_comments();
-	?>
-
+	<div class = "sky">
+		<?php
+			get_comments();
+		?>
+	</div>
   </body>
 </html>

@@ -1,3 +1,17 @@
+body {
+
+}
+
+
+/* the container for the clouds */
+.sky {
+	display: flex;
+	flex-direction: column;
+	/* margin: auto; */
+}
+.sky div {
+	margin: auto;
+}
 .cloud {
 	background-image: url("images/oneBigCloud.png");
 	background-size: contain;
@@ -5,9 +19,11 @@
 
 	height: 200px;
 	width: 200px;
-	/* color: red; */
 
-	line-height: 200px;
+	padding: 25%;
+}
+.cloud p {
 	text-align: center;
-  	vertical-align: middle;
+	padding: 30%;
+
 }
