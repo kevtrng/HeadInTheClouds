@@ -12,7 +12,6 @@
     <h1>HEAD IN THE CLOUDS</h1>
 
     <div class = "button">
-
         <button class= "enterButton" type="button"><a href= "userValidation.php">ENTER</a></button>
     </div>
 

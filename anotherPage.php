@@ -12,16 +12,40 @@ $pdo = db_connect();
     <meta charset="utf-8">
     <title>Head In The Clouds</title>
 
-    <link rel="stylesheet" href="./src/welcome.css">
+    <link rel="stylesheet" href="./src/cloudPost.css">
     <link rel="stylesheet" href="./src/cloud.css">
   </head>
   <body>
 
-    <h1>FUCK</h1>
+    <nav class = "navBar"> 
+        <img src="./src/images/logoCloud.png"> 
+      <ul>
+        <li><a href="anotherPage.php">CLOUD WALL</a></li>
+        <li><a href="#">CLOUD GENERATOR</a></li>
+      </ul>
+    </nav>
 
-    <div class = "button">
 
-        <button class= "enterButton" type="button"><a href= "userValidation.php">ENTER</a></button>
+    <h1>HEAD IN THE CLOUDS</h1>
+
+    <div class="write-comment">
+      <h2>POST YOUR CLOUD</h2>
+
+      <form action="anotherPage.php" method="post">
+
+        <label>
+          Email Address:
+          <input type="email" name="email">
+        </label>
+
+        <label>
+          Enter your Head In The Cloud Thoughts:
+          <textarea name="comment"></textarea>
+        </label>
+
+        <button type="submit" name="button">POST CLOUD</button>
+
+      </form>
     </div>
 
 	<?php

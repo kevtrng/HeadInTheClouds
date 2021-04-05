@@ -16,7 +16,9 @@ function get_comments() {
 }
 function showComments() {
 	global $comments;
-	get_comments();
+  get_comments();
+  
+  echo "<div class = 'comments'><h2>CLOUD WALL</h2>";
 	foreach($comments as $comment) {
 		// echo $comment["commentText"];
 		echo "fuck";

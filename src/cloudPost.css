@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@800&family=Oswald&display=swap');
+
+body{
+    /* background-image: url('./images/bigClouds.png'), url('./images/smallClouds.png');
+    animation: cloud-move;
+    animation-timing-function: linear, linear;
+    animation-duration: 15s;
+    animation-iteration-count: infinite, infinite; */
+    margin: 0px;
+    background-color: #93b6c2;
+}
+
+
+h1{
+    font-family: 'Dosis', sans-serif;
+    font-size: 4.5em;
+    color: #387282;
+    text-shadow: -1vw 1vw 0 #add8e6, -1.2vw 1.2vw 0 white, -2vw 2vw 0 #add8e6;
+    text-align: center;
+}
+
+h2{
+    font-family: 'Dosis', sans-serif;
+    font-size: 3.5em;
+    text-align: center;
+    padding-top:5vw;
+}
+
+img{
+    width: 17%;
+}
+
+/* .navBar img{
+    width: 15%;
+    height: auto;
+}
+
+
+/* @keyframes cloud-move {
+    0% { 
+        background-position: 0}
+    100% { 
+        background-position: 500px, -500px ; 
+    } 
+  } */
+
+nav{
+    background-color: #387282;
+    font-family: 'Oswald', sans-serif;
+}
+
+nav ul{
+    padding:0;
+    margin:0; 
+    list-style-type: none;
+    font-size: 1rem;
+}
+
+nav ul li{
+	padding:1rem;
+	text-align: center;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+a:visited{
+    color: #f8f8ff;
+}
+
+/* Comment Post */
+
+.write-comment{
+    font-family: 'Oswald', sans-serif;
+    border:10px dashed white;
+    padding:1rem;
+    border-radius: 10px;
+}
+
+button[type="submit"]
+{
+    font-family: 'Oswald', sans-serif;
+    background-color: #9EC6D5;
+    font-size: 1em;
+    border: none;
+    border-radius: 50px;
+    width: 10%;
+    display: inline-block;
+    text-align: center;
+    margin: auto;
+}
+
+textarea, input, select
+{
+  border:2px solid #387282;
+  border-radius: 5px;
+}
+
+textarea
+{
+  display: block;
+  width:100%;
+  height:6rem;
+  resize:vertical;
+}
+
+@media screen and (min-width: 1000px){
+    .navBar{
+        display: grid;
+        grid-template-columns: max-content 1fr max-content;
+        align-items: center;
+        position: sticky;
+        top: 0px;
+    }
+
+    .navBar img{
+        grid-column: 1/2;
+    }
+
+
+    .navBar ul{
+        grid-column: 2/3;
+        grid-row: 1;
+        display: grid;
+        grid-template-columns: repeat(4, max-content);
+        justify-content: end;
+    } 
+
+
+    .scroll {
+        border-bottom: 2px solid tomato;
+        transition: border-bottom 0.5s;
+    }
+
+}
