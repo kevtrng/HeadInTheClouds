@@ -3,13 +3,12 @@ require 'config.php';
 
 // Should return a PDO
 function db_connect() {
-
   try {
     // TODO
     // try to open database connection using constants set in config.php
     // return $pdo;
     $connectionString = 'mysql:host=' . DBHOST . ';dbname=' . DBNAME ;
-    $user = DBUSER; 
+    $user = DBUSER;
     $pass = DBPASS;
 
     $pdo = new PDO($connectionString, $user, $pass);
@@ -34,7 +33,7 @@ function handle_form_submission() {
 
       $sql = 'INSERT INTO comments (email, mood, date, commentText) VALUES(:email, :mood, :date, :comment) ';
 
-      $statement = $pdo->prepare($sql); 
+      $statement = $pdo->prepare($sql);
 
 
       $statement->bindValue(':email', $_POST["email"]);
@@ -46,7 +45,7 @@ function handle_form_submission() {
       $statement->execute();
 
     }
-    
+
   }
 }
 
@@ -55,13 +54,13 @@ function get_comments() {
   global $pdo;
   global $comments;
 
-  //TODO
-
   $sql = 'SELECT * FROM comments ORDER BY ID DESC';
 
   $result = $pdo->query($sql);
   while($row = $result->fetch()){
-    $comments[] = $row;
+    // $comments[] = $row;
+	// array_push($comments, $row);
+	echo "<div class='cloud'>" . $row["commentText"]. "</div>";
   }
 
 }
