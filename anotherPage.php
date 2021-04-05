@@ -4,7 +4,7 @@ ini_set('display_errors', 1);
 // require "./php/utility.php";
 require "./database/database.php";
 $pdo = db_connect();
-
+handle_form_submission();
 ?>
 <!DOCTYPE html>
 <html>
@@ -17,8 +17,8 @@ $pdo = db_connect();
   </head>
   <body>
 
-    <nav class = "navBar"> 
-        <img src="./src/images/logoCloud.png"> 
+    <nav class = "navBar">
+        <img src="./src/images/logoCloud.png">
       <ul>
         <li><a href="anotherPage.php">CLOUD WALL</a></li>
         <li><a href="#">CLOUD GENERATOR</a></li>
