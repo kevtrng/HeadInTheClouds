@@ -67,6 +67,13 @@ function get_clouds() {
 
 }
 
+function generateRand() {
+	global $pdo;
+	$query = 'SELECT content FROM clouds ORDER BY rand() LIMIT 1';
+	$result = $pdo->query($query);
+	echo $result->fetch()["content"];
+}
+
 // Get unique email addresses and store in $commenters
 // function get_commenters() {
 //   global $pdo;

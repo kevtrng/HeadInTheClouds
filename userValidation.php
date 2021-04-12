@@ -34,7 +34,7 @@
 
 
     <main>
-      <h2> USER VALIDATION </h2>
+      <h2> CREATE A CLOUD </h2>
       <form method="post" action="userValidation.php">
 
         <label>
@@ -59,20 +59,21 @@
 		<fieldset>
             <legend> How are you feeling?</legend>
 
-              <input type="radio" name="mood" id="content" value="content">
-                <label for="male">Content</label>
-
-              <input type="radio" name="mood" id="upset" value="upset">
-                <label for="female">Upset</label>
-
-              <input type="radio" name="mood" id="disoriented" value="disoriented">
-                <label for="other">Disoriented</label>
-
-			  <input type="radio" name="mood" id="other" value="other">
-                <label for="anon">Other</label>
-              <?php
-              the_validation_message('mood');
-              ?>
+	            <li><input type="radio" name="mood" id="happy" value="content">
+	                <label for="happy">Content</label>
+				</li>
+	            <li><input type="radio" name="mood" id="upset" value="upset">
+	                <label for="upset">Upset</label>
+				</li>
+	            <li><input type="radio" name="mood" id="disoriented" value="disoriented">
+	                <label for="disoriented">Disoriented</label>
+				</li>
+				<li><input type="radio" name="mood" id="other" value="other">
+	                <label for="other">Other</label>
+				</li>
+				<?php
+					the_validation_message('mood');
+				?>
         </fieldset>
         <button type="submit" name="button">POST CLOUD <a href= "validation.php"></a></button>
 

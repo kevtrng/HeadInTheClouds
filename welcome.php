@@ -11,9 +11,12 @@
     <h2>WELCOME TO </h2>
     <h1>HEAD IN THE CLOUDS</h1>
 
-    <div class = "button">
-        <button class= "enterButton" type="button"><a href= "userValidation.php">ENTER</a></button>
-    </div>
+    <!-- <div class = "button"> -->
+	<form action="userValidation.php" class="button">
+        <!-- <button class= "enterButton" type="button"><a href= "userValidation.php">ENTER</a></button> -->
+		<input type="submit" class="enterButton" value="ENTER" />
+	<!-- </div> -->
+</form>
 
 
 
