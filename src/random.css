@@ -75,4 +75,24 @@ a:visited{
 
 #randCloud {
 	margin: auto;
+	background-image: url("images/thoughtCloud.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	padding: 30vw 10vh 30vw 10vh;
+	/* padding-bottom: 30vw; */
+
+	/* height: 80vw;
+	width: 80vw; */
+}
+#randCloud p {
+	text-align: center;
+	margin: auto;
+
+	font-family: 'Dosis';
+
+	width: 85%;
+
+	/* margin-top: 50%; */
 }

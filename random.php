@@ -32,7 +32,7 @@ $pdo = db_connect();
 		<h1>HEAD IN THE CLOUDS</h1>
 		<h2>RANDOM CLOUDS</h2>
 
-		<div id = "randCloud" class="cloud"><?php generateRand()?></div>
+		<div id="randCloud"><p><?php generateRand()?></p></div>
 
 		<input type="button" value="Generate" id="randButton" class="enterButton"/>
 
