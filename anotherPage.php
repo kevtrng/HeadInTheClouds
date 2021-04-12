@@ -22,7 +22,7 @@ $pdo = db_connect();
       <!-- <img src="./src/images/logoCloud.png"> -->
       <ul>
         <li><a href="anotherPage.php">CLOUD WALL</a></li>
-        <li><a href="#">CLOUD GENERATOR</a></li>
+        <li><a href="random.php">CLOUD GENERATOR</a></li>
       </ul>
     </nav>
 

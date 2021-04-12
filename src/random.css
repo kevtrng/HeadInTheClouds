@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@800&family=Oswald&display=swap');
+
+body{
+    margin: 0;
+    background-color: #262626;
+}
+
+h1{
+    font-family: 'Dosis', sans-serif;
+    font-size: 4.5em;
+    color: #add8e6;
+    text-shadow: -1vw 1vw 0 #387282, -2.1vw 2vw 0 #387282;
+    text-align: center;
+    /* padding-bottom: 9vw; */
+    display: flex;
+    justify-content: center;
+}
+
+h2{
+    font-family: 'Dosis', sans-serif;
+    font-size: 4.25em;
+    text-align: center;
+    color: #f8f8ff;
+    text-shadow: -1vw 1vw 0 #d9d9d9;
+    line-height: 40%;
+}
+
+
+nav{
+    background-color: #637d85;
+    font-family: 'Oswald', sans-serif;
+}
+
+.navBar{
+    display: grid;
+    align-items: center;
+    top: 0px;
+}
+
+.navBar h3{
+    color: #f8f8ff;
+    display: grid;
+    justify-content: space-around;
+    grid-column: 1/2;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.navBar ul{
+    grid-column: 2/3;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
+    justify-content: space-evenly;
+}
+
+.navBar ul{
+	padding:0;
+    margin:0;
+	list-style-type: none;
+    font-size: 1.25rem;
+}
+
+.navBar ul li{
+    padding:1rem;
+}
+
+.navBar a{
+    text-decoration: none;
+}
+
+a:visited{
+    color: #f8f8ff;
+}
+
+#randCloud {
+	margin: auto;
+}

@@ -9,12 +9,34 @@ $pdo = db_connect();
 <!DOCTYPE html>
 <html>
 	<head>
+    <meta charset="utf-8">
+		<title>Head In The Clouds</title>
 
+		<link rel="stylesheet" href="./src/random.css">
+		<link rel="stylesheet" href="./src/cloud.css">
+		<link rel="stylesheet" href="./src/welcome.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	</head>
 	<body>
-		<form action="" method="">
-			<input type="submit" value="Generate"/>
-		</form>
-		<?php generateRand()?>
+
+		<nav class = "navBar">
+			<h3>HEAD IN THE CLOUDS</h3>
+			<!-- <img src="./src/images/logoCloud.png"> -->
+			<ul>
+				<li><a href="anotherPage.php">CLOUD WALL</a></li>
+				<li><a href="random.php">CLOUD GENERATOR</a></li>
+			</ul>
+		</nav>
+
+
+		<h1>HEAD IN THE CLOUDS</h1>
+		<h2>RANDOM CLOUDS</h2>
+
+		<div id = "randCloud" class="cloud"><?php generateRand()?></div>
+
+		<input type="button" value="Generate" id="randButton" class="enterButton"/>
+
+
+		<script src="./src/js/random.js"></script>
 	</body>
 </html>
