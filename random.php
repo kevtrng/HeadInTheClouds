@@ -15,5 +15,6 @@ $pdo = db_connect();
 		<form action="" method="">
 			<input type="submit" value="Generate"/>
 		</form>
+		<?php generateRand()?>
 	</body>
 </html>
