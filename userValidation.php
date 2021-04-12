@@ -34,22 +34,20 @@
 
 
     <main>
-      <h1> USER VALIDATION </h1>
+      <h2> USER VALIDATION </h2>
       <form method="post" action="userValidation.php">
 
-        Name (optional):
-		<input type="text" name="name" id="name">
+        <label>
+          Name (optional):
+		     <input type="text" name="name" id="name">
               <?php //the_validation_message('name'); ?>
-
-        Email:
-          <input type="text" name="email" id="email">
-            <?php the_validation_message('email'); ?>
+        </label>
 
         <label>
-          Enter your Head In The Cloud Thoughts:
-          <textarea name="content"></textarea>
+          Email:
+          <input type="email" name="email" id="email">
+            <?php the_validation_message('email'); ?>
         </label>
-		<?php the_validation_message('content'); ?>
 
 		<fieldset>
             <legend> How are you feeling?</legend>
