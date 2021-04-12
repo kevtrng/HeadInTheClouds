@@ -39,7 +39,7 @@ function handle_form_submission() {
 
 
       $statement->bindValue(':email', $_POST["email"]);
-      $statement->bindValue(':mood', "mood");
+      $statement->bindValue(':mood', $_POST["mood"]);
       $statement->bindValue(':content', $_POST["content"]);
       $statement->bindValue(':date', date('Y-m-d'));
 

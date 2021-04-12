@@ -49,6 +49,13 @@
             <?php the_validation_message('email'); ?>
         </label>
 
+        <label>
+          What's on your mind?
+          <textarea name="content" id="content"></textarea>
+            <?php the_validation_message('content'); ?>
+
+        </label>
+
 		<fieldset>
             <legend> How are you feeling?</legend>
 
@@ -73,7 +80,7 @@
 
       </form>
 
-      <?php the_results(); ?>
+      <?php the_results(); // send help ahhhh ?>
     </main>
 
 
