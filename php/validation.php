@@ -70,23 +70,29 @@ function validate() {
 	    $valid = $result;
  	}
 
-    if(isset($_POST["content"]) == !empty($_POST["content"])){
+    // if(isset($_POST["content"]) == !empty($_POST["content"])){
+    if(!empty($_POST["content"]) && strlen($_POST["content"]) <= 10){
         $this_result = true;
     } else {
-      $this_result = false;
+    	$this_result = false;
     }
     $result = $result && $this_result;
 
-    if ($this_result == true) {
+    if ($this_result) {
         $val_messages["content"] = "";
+		return;
     } else {
-        $val_messages["content"] = "Your head isn't that empty. Enter something";
-  	}
+		// if this doesn't work, so be it
+        // $val_messages["content"] = "Your head isn't that empty. Enter something";
+		if(empty($_POST["content"])) {
+			$val_messages["content"] = "Empty.";
+			return;
+		}
+		if(strlen($_POST["content"]) > 10) {
+			$val_messages["content"] = "Too long.";
+		}
+	}
 	$valid = $result;
-
-
-
-
 
 }
 
