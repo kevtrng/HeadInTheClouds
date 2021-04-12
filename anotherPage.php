@@ -12,8 +12,8 @@ $pdo = db_connect();
     <meta charset="utf-8">
     <title>Head In The Clouds</title>
 
-    <link rel="stylesheet" href="./src/cloudWall.css">
-    <link rel="stylesheet" href="./src/cloud.css">
+    <link rel="stylesheet" href="./src/cloudWall.css" />
+    <link rel="stylesheet" href="./src/cloud.css" />
   </head>
   <body>
 
@@ -29,7 +29,7 @@ $pdo = db_connect();
 
     <h1>HEAD IN THE CLOUDS</h1>
     <h2>WALL OF CLOUDS</h2>
-  
+
 
 	<?php
 	get_comments();

@@ -5,14 +5,25 @@
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
-
+/*
 	height: 200px;
-	width: 200px;
+	width: 200px; */
 	/* color: red; */
+	/* width: 20%;
+	height: 20%; */
+	width: min(300px, 60%);
+	height: min(200px, 50%);
 
 	font-family: 'Dosis', sans-serif;
 
 	line-height: 200px;
+	/* margin: auto; */
 	text-align: center;
+	vertical-align: middle;
+
+	padding-bottom: 30px;
+}
+.cloud p {
+	margin: auto;
 	vertical-align: middle;
 }
