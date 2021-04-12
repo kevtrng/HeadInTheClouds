@@ -34,7 +34,7 @@
 
 
     <main>
-      <h2> USER VALIDATION </h2>
+      <h2> CREATE A CLOUD </h2>
       <form method="post" action="userValidation.php">
 
         <label>
