@@ -12,6 +12,8 @@ $pdo = db_connect();
 
 	</head>
 	<body>
-		<button>Random Cloud</button>
+		<form action="" method="">
+			<input type="submit" value="Generate"/>
+		</form>
 	</body>
 </html>
