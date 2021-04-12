@@ -18,7 +18,8 @@ $pdo = db_connect();
   <body>
 
     <nav class = "navBar">
-        <img src="./src/images/logoCloud.png">
+      <h3>HEAD IN THE CLOUDS</h3>
+      <!-- <img src="./src/images/logoCloud.png"> -->
       <ul>
         <li><a href="anotherPage.php">CLOUD WALL</a></li>
         <li><a href="#">CLOUD GENERATOR</a></li>
@@ -27,7 +28,8 @@ $pdo = db_connect();
 
 
     <h1>HEAD IN THE CLOUDS</h1>
-
+    <h2>WALL OF CLOUDS</h2>
+  
 
 	<?php
 	get_comments();

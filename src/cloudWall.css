@@ -1,16 +1,85 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@800&family=Oswald&display=swap');
 
-body{
-    /* background-image: url('./images/bigClouds.png'), url('./images/smallClouds.png');
-    animation: cloud-move;
-    animation-timing-function: linear, linear;
-    animation-duration: 15s;
-    animation-iteration-count: infinite, infinite; */
+
+ body{
+    background-image: url('./images/bigCloudsT.png');
     margin: 0px;
-    background-color: #93b6c2;
+    background-color: #262626;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 
+h1{
+    font-family: 'Dosis', sans-serif;
+    font-size: 4.5em;
+    color: #add8e6;
+    text-shadow: -1vw 1vw 0 #387282, -2.1vw 2vw 0 #387282;
+    text-align: center;
+    /* padding-bottom: 9vw; */
+    display: flex;
+    justify-content: center;
+}
+
+h2{
+    font-family: 'Dosis', sans-serif;
+    font-size: 4.25em;
+    text-align: center;
+    color: #f8f8ff;
+    text-shadow: -1vw 1vw 0 #d9d9d9;
+    line-height: 40%;
+}
+
+nav{
+    background-color: #637d85;
+    font-family: 'Oswald', sans-serif;
+}
+
+.navBar{
+    display: grid;
+    align-items: center;
+    top: 0px;
+}
+
+.navBar h3{
+    color: #f8f8ff;
+    display: grid;
+    justify-content: space-around;
+    grid-column: 1/2;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.navBar ul{
+    grid-column: 2/3;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
+    justify-content: space-evenly;
+} 
+
+.navBar ul{
+	padding:0;
+    margin:0;
+	list-style-type: none;
+    font-size: 1.25rem;
+}
+
+.navBar ul li{
+    padding:1rem;
+}
+
+.navBar a{
+    text-decoration: none;
+}
+
+a:visited{
+    color: #f8f8ff;
+}
+
+
+/* 
 h1{
     font-family: 'Dosis', sans-serif;
     font-size: 4.5em;
@@ -26,15 +95,6 @@ h2{
     padding-top:5vw;
 }
 
-img{
-    width: 17%;
-}
-
-/* .navBar img{
-    width: 15%;
-    height: auto;
-}
-
 
 /* @keyframes cloud-move {
     0% { 
@@ -42,12 +102,7 @@ img{
     100% { 
         background-position: 500px, -500px ; 
     } 
-  } */
-
-nav{
-    background-color: #387282;
-    font-family: 'Oswald', sans-serif;
-}
+  } *//*
 
 nav ul{
     padding:0;
@@ -65,12 +120,11 @@ a:link{
     text-decoration: none;
 }
 
-a:visited{
-    color: #f8f8ff;
-}
 
+*/
 /* Comment Post */
 
+/*
 .write-comment{
     font-family: 'Oswald', sans-serif;
     border:10px dashed white;
@@ -90,35 +144,44 @@ button[type="submit"]
     text-align: center;
     margin: auto;
 }
+*/ 
 
 
-
-@media screen and (min-width: 1000px){
-    .navBar{
-        display: grid;
-        grid-template-columns: max-content 1fr max-content;
-        align-items: center;
-        position: sticky;
-        top: 0px;
+@media screen and (min-width: 812px){
+    /* body {
+        display: flex;
     }
 
-    .navBar img{
-        grid-column: 1/2;
+    h1{
+        font-family: 'Dosis', sans-serif;
+        font-size: 4.5em;
+        color: #add8e6;
+        text-shadow: -0.5vw 0.5vw 0 #387282, -1.1vw 1vw 0 #387282;
+        text-align: center;
+        justify-content: center;
+    }
+
+    h2{
+        font-family: 'Dosis', sans-serif;
+        font-size: 4em;
+        text-align: center;
+        padding-top:5vw;
+        color: #f8f8ff;
+        text-shadow: -0.30vw 0.30vw 0 #d9d9d9;
     }
 
 
-    .navBar ul{
-        grid-column: 2/3;
-        grid-row: 1;
-        display: grid;
-        grid-template-columns: repeat(4, max-content);
-        justify-content: end;
-    } 
+    .enterButton {
+        font-family: 'Oswald', sans-serif;
+        background-color: #f8f8ff;
+        font-size: 2em;
+        border: none;
+        border-radius: 50px;
+        width: 30%;
+        display: inline-block;
+        text-align: center;
+        margin: auto;
+    } */
 
 
-    .scroll {
-        border-bottom: 2px solid tomato;
-        transition: border-bottom 0.5s;
-    }
-
-}
+  } 
