@@ -30,10 +30,13 @@ $pdo = db_connect();
     <h1>HEAD IN THE CLOUDS</h1>
     <h2>WALL OF CLOUDS</h2>
   
-
+    <section>
+      <button id="scrollToTopBtn">⇧</button>
+    </section>
 	<?php
 	get_comments();
 	?>
 
+    <script src="./src/js/app.js"></script>
   </body>
 </html>
