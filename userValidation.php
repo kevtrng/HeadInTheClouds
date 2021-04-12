@@ -8,8 +8,17 @@
 
   // Validate form submission
   validate();
-?>
 
+  error_reporting(E_ALL);
+  ini_set('display_errors', 1);
+  // require "./php/utility.php";
+  require "./database/database.php";
+  $pdo = db_connect();
+  // handle_form_submission();
+  if($valid) {
+	  handle_form_submission();
+  }
+?>
 
 
 <!DOCTYPE html>
@@ -25,18 +34,20 @@
 
 
     <main>
-      <h1> USER VALIDATION </h1>
+      <h2> USER VALIDATION </h2>
       <form method="post" action="userValidation.php">
 
-        Name: <input type="text" name="name" id="name">
-              <?php the_validation_message('name'); ?>
+        <label>
+          Name (optional): 
+		     <input type="text" name="name" id="name">
+              <?php //the_validation_message('name'); ?>
+        </label>
 
-
-
-        Email:
+        <label>
+          Email:
           <input type="text" name="email" id="email">
             <?php the_validation_message('email'); ?>
-
+        </label>
 
         <fieldset>
             <legend> Please select your gender:</legend>
@@ -50,14 +61,23 @@
               <input type="radio" name="gender[]" id="other" value="other">
                 <label for="other">Other</label>
 
-          <!-- Display validation message checkbox group -->
+	            <input type="radio" name="gender[]" id="anon" value="anon">
+                <label for="anon">Prefer not to say</label>
               <?php
               the_validation_message('gender');
               ?>
 
         </fieldset>
 
-        <input class= "submitButton" type="submit" value="Submit"><a href= "validation.php"></a>
+        <label>
+          Enter your Head In The Cloud Thoughts:
+          <textarea name="comment"></textarea>
+        </label>
+
+        <button type="submit" name="button">POST CLOUD <a href= "validation.php"></a></button>
+
+
+        <!-- <input class= "submitButton" type="submit" value="Submit"><a href= "validation.php"></a> -->
 
       </form>
 

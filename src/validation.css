@@ -1,101 +1,134 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@800&family=Oswald&display=swap');
 
-body
+
+body{
+  background-image: url('./images/bigClouds.png'), url('./images/smallClouds.png');
+  animation: cloud-move;
+  animation-timing-function: linear, linear;
+  animation-duration: 15s;
+  animation-iteration-count: infinite, infinite;
+  background-color: #262626;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+
+h1{
+  font-family: 'Dosis', sans-serif;
+  font-size: 5em;
+  color: #add8e6;
+  text-shadow: -1vw 1vw 0 #387282, -2.1vw 2vw 0 #387282;
+  text-align: center;
+  /* padding-bottom: 9vw; */
+  display: flex;
+  justify-content:center;
+}
+
+h2{
+  font-family: 'Dosis', sans-serif;
+  font-size: 3.5em;
+  text-align: center;
+  padding-top:5vw;
+  color: #f8f8ff;
+  text-shadow: -0.5vw 0.5vw 0 #d9d9d9;
+}
+
+form{
+  box-sizing: border-box;
+  border:4px solid #387282;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+
+button[type="submit"]{
+  font-family: 'Oswald', sans-serif;
+  background-color: #9EC6D5;
+  font-size: 1em;
+  border: none;
+  border-radius: 70px;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* main h1{
+  text-shadow: none;
+  font-size: 4.5em;
+  text-align: center;
+} */
+
+form, form>label{
+  display: flex;
+  flex-direction: column;
+
+  background-color: #add8e6;
+}
+
+form>*
+{
+  margin: 2em;
+}
+
+fieldset label{
+  margin-bottom:.5rem;
+  margin-right:2rem;
+}
+
+legend {
+  background-color: #387282;
+  color: white;
+  padding: 5px 10px;
+}
+
+.help-block, .failure-message{
+  color:#EA3C53;
+}
+
+
+main{
+  font-family: 'Dosis', sans-serif;
+  font-size: 1.5em
+  
+}
+
+
+input[type="text"]{
+  border: none;
+  border-radius: 50px;
+  font-size: 1em;
+
+}
+
+/* body
 {
   display: flex;
   flex-direction: column;
   align-items: center;
 
 
-  background-image: url('./images/bigClouds.png'), url('./images/smallClouds.png');
-  animation: cloud-move;
-  animation-timing-function: linear, linear;
-  animation-duration: 15s;
-  animation-iteration-count: infinite, infinite;
+    background-image: url('./images/bigClouds.png'), url('./images/smallClouds.png');
+    animation: cloud-move;
+    animation-timing-function: linear, linear;
+    animation-duration: 15s;
+    animation-iteration-count: infinite, infinite;
+    background-color: #262626;
 }
 
 h1{
-    font-family: 'Dosis', sans-serif;
-    font-size: 4.5em;
-    color: #387282;
-    text-shadow: -1vw 1vw 0 #add8e6, -1.2vw 1.2vw 0 white, -2vw 2vw 0 #add8e6;
-    text-align: center;
+  font-family: 'Dosis', sans-serif;
+  font-size: 4.5em;
+  color: #add8e6;
+  text-shadow: -0.5vw 0.5vw 0 #387282, -1.1vw 1vw 0 #387282;
+  text-align: center;
+  padding-bottom: 9vw;
 }
 
-main h1{
-    text-shadow: none;
-    font-size: 3.5em;
-    text-align: center;
-}
-
-form
-{
-  box-sizing: border-box;
-
-  border:4px solid #387282;
-  border-radius: 10px;
-
-  margin-bottom: 2rem;
-
-
-
-
-}
-
-form, form>label
-{
-  display: flex;
-  flex-direction: column;
-
-  background-color: #add8e6;
-  /* background-image: url('./images/smallClouds.png'), url('./images/bigClouds.png'); */
-  /* animation: cloud-move;
-  animation-timing-function: linear, linear;
-  animation-duration: 15s;
-  animation-iteration-count: infinite, infinite; */
-}
-
-form>*
-{
-  margin:1em;
-}
-
-fieldset label
-{
-  margin-bottom:.5rem;
-  margin-right:2rem;
-}
-
-main{
-    font-family: 'Dosis', sans-serif;
-    max-width: 800px;
-    width:100%;
-}
-
-
-
-input[type="submit"]{
-    font-family: 'Oswald', sans-serif;
-    align-self: center;
-    background-color: #387282;
-    color: white; 
-    border: none;
-    border-radius: 50px;
-    width: 25%;
-    font-size: 1.5em;
-}
-
-input[type="text"]{
-    border: none;
-    border-radius: 50px;
-    font-size: 1em;
-
-}
-
-.help-block, .failure-message
-{
-  color:#EA3C53;
-}
+*/
 
 @keyframes cloud-move {
     0% { 
@@ -103,4 +136,51 @@ input[type="text"]{
     100% { 
         background-position: 500px, -500px ; 
     } 
-  }
+  } 
+
+
+@media screen and (min-width: 813px){
+    body {
+        display: flex; 
+    }
+
+    main{
+      display: flex;
+      grid-template-rows: 500px 500px 1fr 1fr;
+      grid-template-columns: 1fr;
+      flex-direction: column;
+    }
+
+    h1{
+        font-family: 'Dosis', sans-serif;
+        font-size: 4.5em;
+        color: #add8e6;
+        text-shadow: -0.5vw 0.5vw 0 #387282, -1.1vw 1vw 0 #387282;
+        text-align: center;
+        justify-content: center;
+    }
+
+
+    h2{
+        font-family: 'Dosis', sans-serif;
+        font-size: 3em;
+        text-align: center;
+        color: #f8f8ff;
+        text-shadow: -0.30vw 0.30vw 0 #d9d9d9;
+    }
+
+
+    /* .enterButton {
+        font-family: 'Oswald', sans-serif;
+        background-color: #f8f8ff;
+        font-size: 2em;
+        border: none;
+        border-radius: 50px;
+        width: 30%;
+        display: inline-block;
+        text-align: center;
+        margin: auto;
+    } */
+
+
+  } 

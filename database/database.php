@@ -29,15 +29,17 @@ function handle_form_submission() {
   if($_SERVER["REQUEST_METHOD"] == "POST")
   {
     // TODO
-    if(isset($_POST['email']) && isset($_POST['mood']) && isset($_POST['comment'])) {
+    if(isset($_POST['email']) && isset($_POST['comment'])) {
+    // if(isset($_POST['email']) && isset($_POST['mood']) && isset($_POST['comment'])) {
 
       $sql = 'INSERT INTO comments (email, mood, date, commentText) VALUES(:email, :mood, :date, :comment) ';
+      // $sql = 'INSERT INTO comments (email, mood, date, commentText) VALUES(:email, :mood, :date, :comment) ';
 
       $statement = $pdo->prepare($sql);
 
 
       $statement->bindValue(':email', $_POST["email"]);
-      $statement->bindValue(':mood', $_POST["mood"]);
+      $statement->bindValue(':mood', "mood");
       $statement->bindValue(':comment', $_POST["comment"]);
       $statement->bindValue(':date', date('Y-m-d'));
 
