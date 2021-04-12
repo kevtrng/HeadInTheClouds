@@ -21,6 +21,7 @@ $pdo = db_connect();
       <h3>HEAD IN THE CLOUDS</h3>
       <!-- <img src="./src/images/logoCloud.png"> -->
       <ul>
+        <li><a href="userValidation.php">CREATE CLOUD</a></li>
         <li><a href="anotherPage.php">CLOUD WALL</a></li>
         <li><a href="random.php">CLOUD GENERATOR</a></li>
       </ul>
