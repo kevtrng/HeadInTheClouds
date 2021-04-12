@@ -52,7 +52,7 @@ nav{
     display: grid;
     grid-template-columns: repeat(4, max-content);
     justify-content: space-evenly;
-} 
+}
 
 .navBar ul{
 	padding:0;
@@ -73,4 +73,6 @@ a:visited{
     color: #f8f8ff;
 }
 
-
+#randCloud {
+	margin: auto;
+}
