@@ -20,7 +20,7 @@ $pdo = db_connect();
 	<body>
 
 		<nav class = "navBar">
-			<h3>HEAD IN THE CLOUDS</h3>
+		<h3><a href="welcome.php">HEAD IN THE CLOUDS</a></h3>
 			<!-- <img src="./src/images/logoCloud.png"> -->
 			<ul>
 				<li><a href="userValidation.php">CREATE CLOUD</a></li>
