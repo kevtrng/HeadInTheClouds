@@ -34,19 +34,20 @@
 
 
     <main>
-      <h1> USER VALIDATION </h1>
+      <h2> USER VALIDATION </h2>
       <form method="post" action="userValidation.php">
 
-        Name (optional): 
-		<input type="text" name="name" id="name">
+        <label>
+          Name (optional): 
+		     <input type="text" name="name" id="name">
               <?php //the_validation_message('name'); ?>
+        </label>
 
-
-
-        Email:
+        <label>
+          Email:
           <input type="text" name="email" id="email">
             <?php the_validation_message('email'); ?>
-
+        </label>
 
         <fieldset>
             <legend> Please select your gender:</legend>
@@ -60,7 +61,7 @@
               <input type="radio" name="gender[]" id="other" value="other">
                 <label for="other">Other</label>
 
-			  <input type="radio" name="gender[]" id="anon" value="anon">
+	            <input type="radio" name="gender[]" id="anon" value="anon">
                 <label for="anon">Prefer not to say</label>
               <?php
               the_validation_message('gender');
