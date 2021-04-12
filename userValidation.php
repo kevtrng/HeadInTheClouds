@@ -37,44 +37,39 @@
       <h1> USER VALIDATION </h1>
       <form method="post" action="userValidation.php">
 
-        Name (optional): 
+        Name (optional):
 		<input type="text" name="name" id="name">
               <?php //the_validation_message('name'); ?>
-
-
 
         Email:
           <input type="text" name="email" id="email">
             <?php the_validation_message('email'); ?>
 
-
-        <fieldset>
-            <legend> Please select your gender:</legend>
-
-              <input type="radio" name="gender[]" id="male" value="male">
-                <label for="male">Male</label>
-
-              <input type="radio" name="gender[]" id="female" value="female">
-                <label for="female">Female</label>
-
-              <input type="radio" name="gender[]" id="other" value="other">
-                <label for="other">Other</label>
-
-			  <input type="radio" name="gender[]" id="anon" value="anon">
-                <label for="anon">Prefer not to say</label>
-              <?php
-              the_validation_message('gender');
-              ?>
-
-        </fieldset>
-
         <label>
           Enter your Head In The Cloud Thoughts:
-          <textarea name="comment"></textarea>
+          <textarea name="content"></textarea>
         </label>
+		<?php the_validation_message('content'); ?>
 
+		<fieldset>
+            <legend> How are you feeling?</legend>
+
+              <input type="radio" name="mood" id="content" value="content">
+                <label for="male">Content</label>
+
+              <input type="radio" name="mood" id="upset" value="upset">
+                <label for="female">Upset</label>
+
+              <input type="radio" name="mood" id="disoriented" value="disoriented">
+                <label for="other">Disoriented</label>
+
+			  <input type="radio" name="mood" id="other" value="other">
+                <label for="anon">Other</label>
+              <?php
+              the_validation_message('mood');
+              ?>
+        </fieldset>
         <button type="submit" name="button">POST CLOUD <a href= "validation.php"></a></button>
-
 
         <!-- <input class= "submitButton" type="submit" value="Submit"><a href= "validation.php"></a> -->
 

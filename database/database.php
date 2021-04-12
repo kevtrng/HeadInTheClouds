@@ -29,10 +29,10 @@ function handle_form_submission() {
   if($_SERVER["REQUEST_METHOD"] == "POST")
   {
     // TODO
-    if(isset($_POST['email']) && isset($_POST['comment'])) {
+    if(isset($_POST['email']) && isset($_POST['content']) && isset($_POST['mood'])) {
     // if(isset($_POST['email']) && isset($_POST['mood']) && isset($_POST['comment'])) {
 
-      $sql = 'INSERT INTO comments (email, mood, date, commentText) VALUES(:email, :mood, :date, :comment) ';
+      $sql = 'INSERT INTO clouds (email, mood, date, content) VALUES(:email, :mood, :date, :content) ';
       // $sql = 'INSERT INTO comments (email, mood, date, commentText) VALUES(:email, :mood, :date, :comment) ';
 
       $statement = $pdo->prepare($sql);
@@ -40,7 +40,7 @@ function handle_form_submission() {
 
       $statement->bindValue(':email', $_POST["email"]);
       $statement->bindValue(':mood', "mood");
-      $statement->bindValue(':comment', $_POST["comment"]);
+      $statement->bindValue(':content', $_POST["content"]);
       $statement->bindValue(':date', date('Y-m-d'));
 
       // Bind the remaining 3 attributes using the same method
@@ -56,31 +56,31 @@ function get_comments() {
   global $pdo;
   global $comments;
 
-  $sql = 'SELECT * FROM comments ORDER BY ID DESC';
+  $sql = 'SELECT * FROM clouds ORDER BY cloud_id DESC';
 
   $result = $pdo->query($sql);
   while($row = $result->fetch()){
     // $comments[] = $row;
 	// array_push($comments, $row);
-	echo "<div class='cloud'>" . $row["commentText"]. "</div>";
+	echo "<div class='cloud'>" . $row["content"]. "</div>";
   }
 
 }
 
 // Get unique email addresses and store in $commenters
-function get_commenters() {
-  global $pdo;
-  global $commenters;
-
-  //TODO
-    $query = "SELECT * FROM comments ORDER BY id DESC";
-    // $statement = $pdo->prepare($query);
-    $result = $pdo->query($query);
-
-    while($row = $result->fetch()) {
-        if(!(in_array($row["email"], $commenters))) {
-            array_push($commenters, $row["email"]);
-        }
-    }
-    // print_r( $comments);
-}
+// function get_commenters() {
+//   global $pdo;
+//   global $commenters;
+//
+//   //TODO
+//     $query = "SELECT * FROM clouds ORDER BY id DESC";
+//     // $statement = $pdo->prepare($query);
+//     $result = $pdo->query($query);
+//
+//     while($row = $result->fetch()) {
+//         if(!(in_array($row["email"], $commenters))) {
+//             array_push($commenters, $row["email"]);
+//         }
+//     }
+//     // print_r( $comments);
+// }
