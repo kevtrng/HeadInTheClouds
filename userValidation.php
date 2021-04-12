@@ -53,6 +53,7 @@
           What's on your mind?
           <textarea name="content" id="content"></textarea>
             <?php the_validation_message('content'); ?>
+
         </label>
 
 		<fieldset>
