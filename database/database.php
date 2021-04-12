@@ -52,7 +52,7 @@ function handle_form_submission() {
 }
 
 // Get all comments from database and store in $comments
-function get_comments() {
+function get_clouds() {
   global $pdo;
   global $comments;
 
@@ -62,7 +62,7 @@ function get_comments() {
   while($row = $result->fetch()){
     // $comments[] = $row;
 	// array_push($comments, $row);
-	echo "<div class='cloud'>" . $row["content"]. "</div>";
+	echo "<div class='cloud'><p>" . $row["content"]. "</p></div>";
   }
 
 }
