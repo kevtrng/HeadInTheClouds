@@ -42,6 +42,10 @@ form{
   margin-bottom: 1rem;
 }
 
+li {
+	list-style-type: none;
+}
+
 
 button[type="submit"]{
   font-family: 'Oswald', sans-serif;
@@ -93,7 +97,7 @@ legend {
 main{
   font-family: 'Dosis', sans-serif;
   font-size: 1.5em
-  
+
 }
 
 
@@ -142,17 +146,17 @@ h1{
 */
 
 @keyframes cloud-move {
-    0% { 
+    0% {
         background-position: 0}
-    100% { 
-        background-position: 500px, -500px ; 
-    } 
-  } 
+    100% {
+        background-position: 500px, -500px ;
+    }
+  }
 
 
 @media screen and (min-width: 813px){
     body {
-        display: flex; 
+        display: flex;
     }
 
     main{
@@ -194,4 +198,4 @@ h1{
     } */
 
 
-  } 
+  }
