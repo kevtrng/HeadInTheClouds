@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@800&family=Oswald&display=swap');
 
 body{
-    background-image: url('./images/bigClouds.png'), url('./images/smallClouds.png');
+    background-image: url('./images/bigCloudsT.png'), url('./images/smallClouds.png');
     animation: cloud-move;
     animation-timing-function: linear, linear;
     animation-duration: 15s;
@@ -72,7 +72,7 @@ a:visited{
 
 
 
-@media screen and (min-width: 665px){
+@media screen and (min-width: 812px){
     body {
         display: flex;
     }

@@ -2,7 +2,7 @@
 
 
 body{
-  background-image: url('./images/bigClouds.png'), url('./images/smallClouds.png');
+  background-image: url('./images/bigCloudsT.png'), url('./images/smallClouds.png');
   animation: cloud-move;
   animation-timing-function: linear, linear;
   animation-duration: 15s;
@@ -101,7 +101,18 @@ input[type="text"]{
   border: none;
   border-radius: 50px;
   font-size: 1em;
+}
 
+input[type="email"]{
+  border: none;
+  border-radius: 50px;
+  font-size: 1em;
+}
+
+input[type="content"]{
+  border: none;
+  border-radius: 50px;
+  font-size: 1em;
 }
 
 /* body

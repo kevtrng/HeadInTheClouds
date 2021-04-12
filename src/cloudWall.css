@@ -3,6 +3,11 @@
 
  body{
     background-image: url('./images/bigCloudsT.png');
+    animation: cloud-move;
+    animation-timing-function: linear, linear;
+    animation-duration: 15s;
+    animation-iteration-count: infinite, infinite;
+    
     margin: 0px;
     background-color: #262626;
     display: flex;
@@ -78,31 +83,30 @@ a:visited{
     color: #f8f8ff;
 }
 
-
-/* 
-h1{
-    font-family: 'Dosis', sans-serif;
-    font-size: 4.5em;
-    color: #387282;
-    text-shadow: -1vw 1vw 0 #add8e6, -1.2vw 1.2vw 0 white, -2vw 2vw 0 #add8e6;
-    text-align: center;
-}
-
-h2{
-    font-family: 'Dosis', sans-serif;
-    font-size: 3.5em;
-    text-align: center;
-    padding-top:5vw;
+#scrollToTopBtn {
+    background-color: #bfefff;
+    border: none;
+    border-radius: 70%;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 48px;
+    width: 48px;
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
 }
 
 
-/* @keyframes cloud-move {
+
+@keyframes cloud-move {
     0% { 
         background-position: 0}
     100% { 
         background-position: 500px, -500px ; 
     } 
-  } *//*
+  } 
+  /*
 
 nav ul{
     padding:0;
@@ -147,9 +151,9 @@ button[type="submit"]
 */ 
 
 
-@media screen and (min-width: 812px){
-    /* body {
-        display: flex;
+@media screen and (min-width: 813px){
+    body {
+        display: flex; 
     }
 
     h1{
@@ -161,27 +165,29 @@ button[type="submit"]
         justify-content: center;
     }
 
+
     h2{
         font-family: 'Dosis', sans-serif;
         font-size: 4em;
         text-align: center;
-        padding-top:5vw;
         color: #f8f8ff;
         text-shadow: -0.30vw 0.30vw 0 #d9d9d9;
     }
 
 
-    .enterButton {
-        font-family: 'Oswald', sans-serif;
-        background-color: #f8f8ff;
-        font-size: 2em;
+    #scrollToTopBtn {
+        background-color: #bfefff;
         border: none;
-        border-radius: 50px;
-        width: 30%;
-        display: inline-block;
-        text-align: center;
-        margin: auto;
-    } */
+        border-radius: 70%;
+        color: black;
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 48px;
+        width: 48px;
+        position: fixed;
+        right: 25px;
+        bottom: 25px;
+    }
 
 
   } 
