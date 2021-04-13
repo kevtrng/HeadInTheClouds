@@ -364,6 +364,16 @@ list-style-type: none;
       color: #f8f8ff;
   }
 
+  a { 
+    transition: all .2s ease-in-out; 
+}
+
+  a:hover { 
+    transform: scale(1.1); 
+    color: #387282
+    }
+
+
 
 
   }
