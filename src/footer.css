@@ -50,3 +50,8 @@ footer{
 .footerBar a{
     text-decoration: none;
 }
+
+.footerBar a:visited{
+    color: white;
+}
+
