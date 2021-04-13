@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@800&family=Oswald&display=swap');
+
+body{
+    margin: 0;
+}
+
+footer{
+    background-color: #637d85;
+    font-family: 'Dosis', sans-serif;
+
+}
+
+.footerBar{
+    display: grid;
+    align-items: center;
+    bottom: 0;
+    height: 8vh;
+}
+
+.footerBar p{
+    color: #f8f8ff;
+    display: grid;
+    justify-content: space-around;
+    grid-column: 1/2;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.footerBar ul{
+    grid-column: 3;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
+    justify-content: space-evenly;
+} 
+
+.footerBar ul{
+	padding:0;
+    margin:0;
+	list-style-type: none;
+    font-size: 1rem;
+}
+
+.footerBar ul li{
+    padding:1rem;
+}
+
+.footerBar a{
+    text-decoration: none;
+}

@@ -28,6 +28,7 @@
     <title>Head In The Clouds</title>
 
     <link rel="stylesheet" href="./src/validation.css">
+    <link rel="stylesheet" href="./src/footer.css">
   </head>
   <body>
     <h1> HEAD IN THE CLOUDS </h1>
@@ -84,7 +85,13 @@
       <?php the_results(); // send help ahhhh ?>
     </main>
 
-
+		<footer class = "footerBar">
+			<p>HEAD IN THE CLOUDS © </p>
+				<ul>
+				<li><a href="./static/documentation.html">Documentation</a></li>
+				<li><a href="./static/credits.html">Credits</a></li>
+				</ul>
+		</footer>
 
   </body>
 </html>
