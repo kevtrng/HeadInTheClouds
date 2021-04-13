@@ -1,14 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@800&family=Oswald&display=swap');
 
 .cloud {
-	background-image: url("images/thoughtClouds.png");
+	background-image: url("./images/thoughtCloud.png");
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
 
 	height: 650px;
-	width: 650px;
+	width: 600px;
+	/* width: 80vw;
+	height: 30vh; */
 	/* color: red; */
+
+	margin: auto;
 
 	font-family: 'Dosis', sans-serif;
 	font-size: 1.5em;

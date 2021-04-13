@@ -7,7 +7,7 @@
     animation-timing-function: linear, linear;
     animation-duration: 15s;
     animation-iteration-count: infinite, infinite;
-    
+
     margin: 0px;
     background-color: #262626;
     display: flex;
@@ -62,7 +62,7 @@ nav{
     display: grid;
     grid-template-columns: repeat(4, max-content);
     justify-content: space-evenly;
-} 
+}
 
 .navBar ul{
 	padding:0;
@@ -100,17 +100,17 @@ a:visited{
 
 
 @keyframes cloud-move {
-    0% { 
+    0% {
         background-position: 0}
-    100% { 
-        background-position: 500px, -500px ; 
-    } 
-  } 
+    100% {
+        background-position: 500px, -500px ;
+    }
+  }
   /*
 
 nav ul{
     padding:0;
-    margin:0; 
+    margin:0;
     list-style-type: none;
     font-size: 1rem;
 }
@@ -148,12 +148,14 @@ button[type="submit"]
     text-align: center;
     margin: auto;
 }
-*/ 
+*/
 
 
 @media screen and (min-width: 813px){
     body {
-        display: flex; 
+        display: grid;
+		/* grid-template-columns: repeat(1fr, 3); */
+		grid-template-columns: 1fr 1fr;
     }
 
     h1{
@@ -190,4 +192,4 @@ button[type="submit"]
     }
 
 
-  } 
+  }

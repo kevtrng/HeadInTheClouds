@@ -75,7 +75,7 @@ form, form>label{
 
 form>*
 {
-  margin: 2em;
+  margin: 1.5em;
 }
 
 fieldset label{
@@ -119,31 +119,6 @@ input[type="content"]{
   font-size: 1em;
 }
 
-/* body
-{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-
-    background-image: url('./images/bigClouds.png'), url('./images/smallClouds.png');
-    animation: cloud-move;
-    animation-timing-function: linear, linear;
-    animation-duration: 15s;
-    animation-iteration-count: infinite, infinite;
-    background-color: #262626;
-}
-
-h1{
-  font-family: 'Dosis', sans-serif;
-  font-size: 4.5em;
-  color: #add8e6;
-  text-shadow: -0.5vw 0.5vw 0 #387282, -1.1vw 1vw 0 #387282;
-  text-align: center;
-  padding-bottom: 9vw;
-}
-
-*/
 
 @keyframes cloud-move {
     0% {

@@ -92,7 +92,8 @@ a:visited{
 
 	font-family: 'Dosis';
 
-	width: 85%;
+	width: 90%;
 
+	word-wrap: break-word;
 	/* margin-top: 50%; */
 }
