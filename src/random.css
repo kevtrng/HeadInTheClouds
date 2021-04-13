@@ -75,7 +75,7 @@ a:visited{
 
 #randCloud {
 	margin: auto;
-	background-image: url("images/thoughtCloud_.png");
+	background-image: url("images/thoughtCloud.png");
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -96,4 +96,3 @@ a:visited{
 
 	/* margin-top: 50%; */
 }
-
