@@ -83,7 +83,9 @@ a:hover{
 	background-image: url("images/thoughtCloud.png");
 	background-size: contain;
 	background-repeat: no-repeat;
-	background-position: center;
+    background-position: center;
+    
+    margin-bottom: 100px;
 
 	padding: 30vw 10vh 30vw 10vh;
 	/* padding-bottom: 30vw; */
@@ -108,8 +110,8 @@ footer{
     font-family: 'Dosis', sans-serif;
     position: relative;
     bottom: 0;
-    width: 100%;
-    margin: 0; 
+
+
 
 }
 
@@ -117,6 +119,7 @@ footer{
     display: grid;
     align-items: center;
     height: 8vh;
+    margin-top: 100px;
 }
 
 .footerBar p{
@@ -150,6 +153,7 @@ footer{
 .footerBar a{
     text-decoration: none;
 }
+
 @media screen and (min-width: 813px){
     a{
         transition: all .2s ease-in-out;
@@ -206,5 +210,6 @@ footer{
     a:visited{
         color: #f8f8ff;
     }
+
 
   }
