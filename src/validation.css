@@ -72,7 +72,52 @@ button[type="submit"]:hover{
   font-size: 4.5em;
   text-align: center;
 } */
+nav{
+    background-color: #637d85;
+    font-family: 'Oswald', sans-serif;
+}
 
+.navBar{
+    display: grid;
+    align-items: center;
+    top: 0px;
+}
+
+.navBar h3{
+    color: #f8f8ff;
+    display: grid;
+    justify-content: space-around;
+    grid-column: 1/2;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.navBar ul{
+    grid-column: 2/3;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
+    justify-content: space-evenly;
+}
+
+.navBar ul{
+	padding:0;
+    margin:0;
+	list-style-type: none;
+    font-size: 1.25rem;
+}
+
+.navBar ul li{
+    padding:1rem;
+}
+
+.navBar a{
+    text-decoration: none;
+}
+
+a:visited{
+    color: #f8f8ff;
+}
 form, form>label{
   display: flex;
   flex-direction: column;
@@ -157,7 +202,7 @@ footer{
   display: grid;
   grid-template-columns: repeat(4, max-content);
   justify-content: space-evenly;
-} 
+}
 
 .footerBar ul{
 padding:0;
