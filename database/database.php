@@ -5,8 +5,6 @@ require 'config.php';
 function db_connect() {
   try {
     // TODO
-    // try to open database connection using constants set in config.php
-    // return $pdo;
     $connectionString = 'mysql:host=' . DBHOST . ';dbname=' . DBNAME ;
     $user = DBUSER;
     $pass = DBPASS;
