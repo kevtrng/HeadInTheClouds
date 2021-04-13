@@ -15,9 +15,6 @@ $pdo = db_connect();
 		<link rel="stylesheet" href="./src/random.css">
 		<link rel="stylesheet" href="./src/cloud.css">
 		<link rel="stylesheet" href="./src/welcome.css">
-		<link rel="stylesheet" href="./src/burger.css">
-
-		<link rel="stylesheet" href="./src/footer.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	</head>
 	<body>
@@ -30,11 +27,6 @@ $pdo = db_connect();
 				<li><a href="anotherPage.php">CLOUD WALL</a></li>
 				<li><a href="random.php">CLOUD GENERATOR</a></li>
 			</ul>
-			<div class="burger">
-              <div class="line1"></div>
-              <div class="line2"></div>
-              <div class="line3"></div>
-       		 </div>
 		</nav>
 
 

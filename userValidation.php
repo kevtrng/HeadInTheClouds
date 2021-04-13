@@ -28,7 +28,7 @@
     <title>Head In The Clouds</title>
 
     <link rel="stylesheet" href="./src/validation.css">
-    <link rel="stylesheet" href="./src/footer.css">
+    <!-- <link rel="stylesheet" href="./src/footer.css"> -->
   </head>
   <body>
     <h1> HEAD IN THE CLOUDS </h1>

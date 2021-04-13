@@ -105,11 +105,20 @@ a:visited{
 @keyframes cloud-move {
     0% {
         background-position: 0}
-    100% {
-        background-position: 500px, -500px ;
-    }
-  }
-  /*
+    100% { 
+        background-position: 500px, -500px ; 
+    } 
+} 
+
+footer{
+    background-color: #637d85;
+    font-family: 'Dosis', sans-serif;
+    position: relative;
+    bottom: 0;
+    margin: 0; 
+}
+
+
 
 nav ul{
     padding:0;
@@ -118,40 +127,43 @@ nav ul{
     font-size: 1rem;
 }
 
-nav ul li{
-	padding:1rem;
-	text-align: center;
+.footerBar{
+    display: grid;
+    align-items: center;
+    height: 8vh;
 }
 
-a:link{
+.footerBar p{
+    color: #f8f8ff;
+    display: grid;
+    justify-content: space-around;
+    grid-column: 1/2;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.footerBar ul{
+    grid-column: 3;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
+    justify-content: space-evenly;
+} 
+
+.footerBar ul{
+	padding:0;
+    margin:0;
+	list-style-type: none;
+    font-size: 1rem;
+}
+
+.footerBar ul li{
+    padding:1rem;
+}
+
+.footerBar a{
     text-decoration: none;
 }
-
-
-*/
-/* Comment Post */
-
-/*
-.write-comment{
-    font-family: 'Oswald', sans-serif;
-    border:10px dashed white;
-    padding:1rem;
-    border-radius: 10px;
-}
-
-button[type="submit"]
-{
-    font-family: 'Oswald', sans-serif;
-    background-color: #9EC6D5;
-    font-size: 1em;
-    border: none;
-    border-radius: 50px;
-    width: 10%;
-    display: inline-block;
-    text-align: center;
-    margin: auto;
-}
-*/
 
 
 @media screen and (min-width: 813px){

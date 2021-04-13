@@ -14,7 +14,7 @@ $pdo = db_connect();
 
     <link rel="stylesheet" href="./src/cloudWall.css">
     <link rel="stylesheet" href="./src/cloud.css">
-    <link rel="stylesheet" href="./src/footer.css">
+    <!-- <link rel="stylesheet" href="./src/footer.css"> -->
   </head>
   <body>
 
