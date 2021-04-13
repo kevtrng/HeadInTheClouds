@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@800&family=Oswald&display=swap');
 
 .cloud {
-	background-image: url("images/thoughtClouds.png");
+	background-image: url("./images/thoughtCloud.png");
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
