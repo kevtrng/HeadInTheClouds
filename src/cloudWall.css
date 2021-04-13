@@ -10,11 +10,14 @@
 
     margin: 0px;
     background-color: #262626;
-    display: flex;
+
+}
+
+main {
+	display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
-
 
 h1{
     font-family: 'Dosis', sans-serif;
@@ -152,10 +155,9 @@ button[type="submit"]
 
 
 @media screen and (min-width: 813px){
-    body {
+    main {
         display: grid;
-		/* grid-template-columns: repeat(1fr, 3); */
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: repeat(2, 1fr);
     }
 
     h1{
