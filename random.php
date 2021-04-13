@@ -15,6 +15,8 @@ $pdo = db_connect();
 		<link rel="stylesheet" href="./src/random.css">
 		<link rel="stylesheet" href="./src/cloud.css">
 		<link rel="stylesheet" href="./src/welcome.css">
+
+		<link rel="stylesheet" href="./src/footer.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	</head>
 	<body>
@@ -38,6 +40,14 @@ $pdo = db_connect();
 		<input type="button" value="Generate" id="randButton" class="enterButton"/>
 
 
+		<footer class = "footerBar">
+			<p>HEAD IN THE CLOUDS © </p>
+				<ul>
+				<li><a href="./static/documentation.html">Documentation</a></li>
+				<li><a href="./static/credits.html">Credits</a></li>
+				</ul>
+		</footer>
+	
 		<script src="./src/js/random.js"></script>
 	</body>
 </html>

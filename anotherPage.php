@@ -14,6 +14,7 @@ $pdo = db_connect();
 
     <link rel="stylesheet" href="./src/cloudWall.css">
     <link rel="stylesheet" href="./src/cloud.css">
+    <link rel="stylesheet" href="./src/footer.css">
   </head>
   <body>
 
@@ -37,6 +38,14 @@ $pdo = db_connect();
 	<?php
 	get_comments();
 	?>
+
+    <footer class = "footerBar">
+      <p>HEAD IN THE CLOUDS © </p>
+        <ul>
+          <li><a href="./static/documentation.html">Documentation</a></li>
+          <li><a href="./static/credits.html">Credits</a></li>
+        </ul>
+    </footer>
 
     <script src="./src/js/app.js"></script>
   </body>
