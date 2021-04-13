@@ -7,38 +7,82 @@
 	<body>
 		<h1>HEAD IN THE CLOUDS</h1>
 		<p>
-			<b>Head in the Clouds<b> is a web application that allows
+			<b>Head in the Clouds</b> is a web application that allows
 			you to post your thoughts! Share your thoughts with other
-			users by creating a new cloud. You can also read other people's
-			clouds on our Cloud Wall!
+			users by creating a new Cloud. You can also read other people's
+			Clouds on our Cloud Wall!
 		</p>
-		<h2>Documentation</h2>
+
+		<h2>Features<h2>
 
 		<h3>Mobile Friendly</h3>
 		<p>All pages are designed using a mobile-first approach</p>
 
-		<h3>JavaScript</h3>
+		<h3>JavaScript (JQuery)</h3>
 		<p>
+			Our Cloud Wall includes a scroll to top button. Useful when
+			you get lost in everyone's thoughts.
+		</p>
+		<p>
+<<<<<<< HEAD
+			Additionally, our random cloud generator includes some usage
+			of JQuery to reload the page upon a button click.
+=======
 			On Cloud Wall there is a scroll to top button when you are scroll
 			through all those thoughts
+>>>>>>> ed3b4c810e2a8f39ab6f1fc052df5d6726db8c0b
 		</p>
 
-		<h3>Animation</h3>
+		<h3>Animation/Transitions</h3>
 		<ul>
 			<li>Used keyframe animation for background cloud moving</li>
 		</ul>
 
 		<h3>Validation</h3>
+		Our form to create a Cloud requires the user to input proper data
+		to prevent spam or other data that would be a nuisance
 		<ul>
-			<li>Used a validation on  in order to allow people to post on cloud wall
-				so spams won't happen.
+			<li>
+				email field cannot be blank and must include a @ and .com
 			</li>
-			<li>users need to have enter @ in the email section in the create a cloud page</li>
+			<li>users cannot create an empty Cloud</li>
+			<li>Clouds must have no more than 50 characters</li>
 			<li>users need to select a mood</li>
-			<li>users need to enter what's on their mind</li>
 		</ul>
 
+<<<<<<< HEAD
+		<h2>Documentation</h2>
+		Heading to <a href="../welcome.php"> the welcome page</a> will
+		greet you with a button that leads to the page to
+		<a href="../userValidation.php"> create a Cloud</a>.
+=======
 
+>>>>>>> ed3b4c810e2a8f39ab6f1fc052df5d6726db8c0b
 
+		<h3>Creating a Cloud</h3>
+		To create a cloud enter your email, thought, and mood. Please
+		ensure that you:
+		<ul>
+			<li>do not leave any fields blank</li>
+			<li>enter an email with a valid format</li>
+			<li>Enter a thought that is 1-50 characters long</li>
+		</ul>
+		If any of the above conditions are not met, your Cloud will
+		not make it to the Cloud Wall!
+
+		<h3> Viewing Clouds </h3>
+		<p>The <a href="../anotherPage.php">Cloud Wall</a> allows you to view
+		yours and other users' Clouds. </p>
+		<p>
+			Since we have an "endless scroll" format, our scroll to top
+			button will ensure you don't have to scroll for miles to get
+			back to the top of the page
+		</p>
+
+		<h3>Generating a Random Cloud</h3>
+		<p>
+			Okay there's literally a single button on the page that
+			says "generate". I feel like you're not that incompetent.
+		</p>
 	</body>
 </html>

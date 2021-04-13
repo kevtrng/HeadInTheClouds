@@ -33,12 +33,13 @@ $pdo = db_connect();
     <h2>WALL OF CLOUDS</h2>
   
     <section>
-      <button id="scrollToTopBtn">⇧</button>
+     	<button id="scrollToTopBtn">⇧</button>
     </section>
-	<?php
-	get_comments();
-	?>
-
+	<main>
+		<?php
+		get_comments();
+		?>
+	</main>
     <footer class = "footerBar">
       <p>HEAD IN THE CLOUDS © </p>
         <ul>
