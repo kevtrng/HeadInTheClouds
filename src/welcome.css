@@ -51,11 +51,17 @@ h2{
     display: inline-block;
     text-align: center;
     margin: auto;
+    transition: all .2s ease-in-out;
+}
+
+.enterButton:hover {
+    transform: scale(1.2);
 }
 
 a:link{
     text-decoration: none;
 }
+
 
 
 @keyframes cloud-move {
@@ -90,6 +96,7 @@ a:link{
         padding-top:5vw;
         color: #f8f8ff;
         text-shadow: -0.30vw 0.30vw 0 #d9d9d9;
+        margin-top: -100px;
     }
 
 
@@ -102,7 +109,8 @@ a:link{
         width: 30%;
         display: inline-block;
         text-align: center;
-        margin: auto;
+        margin-bottom: 100px;
+
     }
 
 
