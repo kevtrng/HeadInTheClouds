@@ -19,13 +19,13 @@
 	<!-- </div> -->
 </form>
 
-<!-- <footer class = "footerBar">
+<footer class = "footerBar">
 			<p>HEAD IN THE CLOUDS © </p>
 				<ul>
 				<li><a href="./static/documentation.html">Documentation</a></li>
 				<li><a href="./static/credits.html">Credits</a></li>
 				</ul>
-		</footer> -->
+		</footer>
 
   </body>
 </html>

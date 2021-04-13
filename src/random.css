@@ -97,3 +97,51 @@ a:visited{
 	word-wrap: break-word;
 	/* margin-top: 50%; */
 }
+
+footer{
+    background-color: #637d85;
+    font-family: 'Dosis', sans-serif;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin: 0; 
+
+}
+
+.footerBar{
+    display: grid;
+    align-items: center;
+    height: 8vh;
+}
+
+.footerBar p{
+    color: #f8f8ff;
+    display: grid;
+    justify-content: space-around;
+    grid-column: 1/2;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.footerBar ul{
+    grid-column: 3;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
+    justify-content: space-evenly;
+} 
+
+.footerBar ul{
+	padding:0;
+    margin:0;
+	list-style-type: none;
+    font-size: 1rem;
+}
+
+.footerBar ul li{
+    padding:1rem;
+}
+
+.footerBar a{
+    text-decoration: none;
+}
