@@ -42,7 +42,7 @@ nav{
     display: grid;
     justify-content: space-around;
     grid-column: 1/2;
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: bold;
 }
 
@@ -58,7 +58,7 @@ nav{
 	padding:0;
     margin:0;
 	list-style-type: none;
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 
 .navBar ul li{
@@ -73,12 +73,19 @@ a:visited{
     color: #f8f8ff;
 }
 
+  
+a:hover{
+    color: #387282;
+}
+
 #randCloud {
 	margin: auto;
 	background-image: url("images/thoughtCloud.png");
 	background-size: contain;
 	background-repeat: no-repeat;
-	background-position: center;
+    background-position: center;
+    
+    margin-bottom: 100px;
 
 	padding: 30vw 10vh 30vw 10vh;
 	/* padding-bottom: 30vw; */
@@ -103,8 +110,8 @@ footer{
     font-family: 'Dosis', sans-serif;
     position: relative;
     bottom: 0;
-    width: 100%;
-    margin: 0; 
+
+
 
 }
 
@@ -112,6 +119,7 @@ footer{
     display: grid;
     align-items: center;
     height: 8vh;
+    margin-top: 100px;
 }
 
 .footerBar p{
@@ -145,3 +153,63 @@ footer{
 .footerBar a{
     text-decoration: none;
 }
+
+@media screen and (min-width: 813px){
+    a{
+        transition: all .2s ease-in-out;
+      }
+      
+      a:hover{
+        color: #387282;
+        transform: scale(1.1);;
+      }
+
+    nav{
+        background-color: #637d85;
+        font-family: 'Oswald', sans-serif;
+    }
+
+    .navBar{
+        display: grid;
+        align-items: center;
+        top: 0px;
+    }
+
+    .navBar h3{
+        color: #f8f8ff;
+        display: grid;
+        justify-content: space-around;
+        grid-column: 1/2;
+        font-size: 2em;
+        font-weight: bold;
+    }
+
+    .navBar ul{
+        grid-column: 2/3;
+        grid-row: 1;
+        display: grid;
+        grid-template-columns: repeat(4, max-content);
+        justify-content: space-evenly;
+    }
+
+    .navBar ul{
+        padding:0;
+        margin:0;
+        list-style-type: none;
+        font-size: 1.25rem;
+    }
+
+    .navBar ul li{
+        padding:1rem;
+    }
+
+    .navBar a{
+        text-decoration: none;
+    }
+
+    a:visited{
+        color: #f8f8ff;
+    }
+
+
+  }
