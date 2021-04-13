@@ -36,13 +36,6 @@
     <main>
       <h2> CREATE A CLOUD </h2>
       <form method="post" action="userValidation.php">
-
-        <label>
-          Name (optional):
-		     <input type="text" name="name" id="name">
-              <?php //the_validation_message('name'); ?>
-        </label>
-
         <label>
           Email:
           <input type="email" name="email" id="email">
@@ -53,7 +46,6 @@
           What's on your mind?
           <textarea name="content" id="content"></textarea>
             <?php the_validation_message('content'); ?>
-
         </label>
 
 		<fieldset>

@@ -6,6 +6,7 @@
 	background-repeat: no-repeat;
 	background-position: center;
 
+
 	height: 650px;
 	width: 650px;
 	/* color: red; */
@@ -13,10 +14,17 @@
 	font-family: 'Dosis', sans-serif;
 	font-size: 1.5em;
 
-	line-height: 20;
+	/* line-height: 20; */
 	text-align: center;
 	vertical-align: middle;
+
+	margin: auto;
 }
 .cloud p {
+	text-align: center;
+	margin: auto;
+	width: 70%;
 
+	/* padding: 30vw; */
+	padding-top: 50%;
 }
