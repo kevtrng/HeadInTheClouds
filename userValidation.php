@@ -7,7 +7,7 @@
   require_once('./php/validation.php');
 
   // Validate form submission
-  validate();
+  validater();
 
   error_reporting(E_ALL);
   ini_set('display_errors', 1);
@@ -37,11 +37,11 @@
       <h2> CREATE A CLOUD </h2>
       <form method="post" action="userValidation.php">
 
-        <label>
+        <!-- <label>
           Name (optional):
 		     <input type="text" name="name" id="name">
               <?php //the_validation_message('name'); ?>
-        </label>
+        </label> -->
 
         <label>
           Email:
