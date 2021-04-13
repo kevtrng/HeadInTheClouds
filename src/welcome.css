@@ -51,11 +51,17 @@ h2{
     display: inline-block;
     text-align: center;
     margin: auto;
+    transition: all .2s ease-in-out;
+}
+
+.enterButton:hover {
+    transform: scale(1.5);
 }
 
 a:link{
     text-decoration: none;
 }
+
 
 
 @keyframes cloud-move {
